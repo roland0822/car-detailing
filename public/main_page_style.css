@@ -1,0 +1,147 @@
+body {
+    background: url("images/backgrounds/bubbles.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: antiquewhite;
+    }
+    
+    .flex-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    
+    .flex-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    
+    .flex-aside {
+    display: flex;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: beige;
+    }
+    
+    .flex-footer {
+    display: flex;
+    justify-content: center;
+    }
+    
+    #main-box {
+    display: flex;
+    width: max-content;
+    border-style: solid;
+    border-color: beige;
+    border-radius: 10px;
+    }
+  
+    
+    #focim {
+    color: bisque;
+    }
+    
+    #stilus-button {
+    background-color: aliceblue;
+    color: dodgerblue;
+    border-radius: 10%;
+    border-color: aliceblue;
+    }
+    
+    a:hover {
+    color: cyan;
+    text-decoration: blink;
+    }
+    
+    nav ul li a {
+    color: darkorange;
+    }
+    
+    nav ul li {
+    color: red;
+    }
+    
+    /* Matrix Layout */
+    .flex-main {
+    flex-wrap: wrap;
+    }
+    
+    .flex-main > * {
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 5px;
+    }
+
+    .service-listing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .service {
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-image: linear-gradient(45deg, #9578f3, #42af58);
+        text-align: center;
+      }
+      
+      .service img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+      
+      .service-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      
+      .service-description {
+        margin-bottom: 10px;
+      }
+      
+      .service-reservation {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .service-input {
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .reservation-box {
+        background-color: #38af79;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      
+      .reservation-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ba56de;
+        margin-top: 10px;
+      }
+      
+      .reservation-button {
+        background-color: #38af79;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }

@@ -1,0 +1,7 @@
+body {
+    background: url("images/backgrounds/background2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: antiquewhite;
+  }
+
+h1{ color: red}

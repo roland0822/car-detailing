@@ -1,0 +1,89 @@
+body {
+    background: url("images/backgrounds/car.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: antiquewhite;
+    
+  }
+
+.flex-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.flex-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.flex-aside{
+    display: flex;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: beige;
+    
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: center;
+}
+
+#main-box{
+    display: flex;
+    width: max-content; 
+    border-style: solid;
+    border-color: beige; 
+    background-image: linear-gradient(45deg, #9578f3, #42af58);
+    border: 3px solid #df7320;
+    padding: 10px;
+}
+
+#login-flex{
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+  
+}
+
+
+#focim{
+    color:rgb(187, 67, 30);
+    background-color: black;
+    background-image: url("images/backgrounds/bubbles.jpg");
+}
+
+a{
+    text-decoration: blink;
+    color:beige
+}
+
+a:hover{
+    color:rgb(255, 170, 0);
+    text-decoration: blink;
+}
+
+#login_text {
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+   }
+
+
+ .flex-container {
+    background-image: linear-gradient(45deg, #9578f3, #42af58);
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #75481a;
+    padding: 10px;
+}
+
+
+
+

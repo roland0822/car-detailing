@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<link id="styleSheet" rel="stylesheet" type="text/css"
+            href="main_page_style.css" media="screen">
+<script src="main_page.js"></script>
+<html lang = "hu">
+    <head>
+        <title>Autó böngésző</title>
+        <meta charset = "utf-8">
+    </head>
+<body>
+    <header>
+        <div class="flex-header">
+            <div>  <h1 id="focim">Szolgaltatasaink</h1></div>
+            <div>  <nav>
+                <ul>
+                    <!-- <li><a href="#">Kezdolap</a></li>
+                    <li><a href="#">Rolunk</a></li>
+                    <li><a href="/logout">Logout</a></li> -->
+                </ul>
+            </nav></div>
+        </div>
+    
+    </header>
+
+<main>
+    <div class="service-listing">
+        <div class="service">
+          <img src="images/cars/service1.jpg" alt="service 1">
+          <h3 class="service-title">Belso tisztitas</h3>
+          <p class="service-description">Alapos belso tisztitas specialis karpit es plasztik tisztito szerekkel.</p>
+          <h3 class="price">170 lei</h3>
+          <div class="reservation-box">
+            <button class="reservation-button" onclick="submitReservation('Szolgáltatás 3', 'service3-input')">Foglalás</button>
+            <input type="datetime-local" class="service-input" onchange="handleDateTimeChange(event)">
+          </div>
+        </div>
+      
+        <div class="service">
+          <img src="images/cars/service2.jpg" alt="service 2">
+          <h3 class="service-title">Polirozas</h3>
+          <p class="service-description">Egy vedo bevonatot kepezo polir pasztaval kitoltjuk a karcokat es fenyesre polirozzuk kocsijat.</p>
+          <h3 class="price">120 lei</h3>
+          <div class="reservation-box">
+            <button class="reservation-button" onclick="submitReservation('Szolgáltatás 3', 'service3-input')">Foglalás</button>
+            <input type="datetime-local" class="service-input" onchange="handleDateTimeChange(event)">
+          </div>
+        </div>
+      
+        <div class="service">
+          <img src="images/cars/service3.jpg" alt="service 3">
+          <h3 class="service-title">Plasztik rekondicio</h3>
+          <p class="service-description">Az eloregedett plasztikot ujra fenyesse es elenke alakitja az altalunk hasznalt spray.</p>
+          <h3 class="price">80 lei</h3>
+          <div class="reservation-box">
+            <button class="reservation-button" onclick="submitReservation('Szolgáltatás 3', 'service3-input')">Foglalás</button>
+            <input type="datetime-local" class="service-input" onchange="handleDateTimeChange(event)">
+          </div>
+        </div>
+      </div>
+      
+
+</main>
+
+<script>
+    function handleDateTimeChange(event) {
+      var selectedDateTime = event.target.value;
+      console.log("Kiválasztott dátum és idő:", selectedDateTime);
+    }
+   
+    function submitReservation(serviceName, inputId) {
+      var selectedDateTime = document.getElementById(inputId).value;
+      console.log("Kiválasztott dátum és idő (" + serviceName + "):", selectedDateTime);
+      // Itt írhatod meg a további műveleteket a foglalás rögzítéséhez vagy feldolgozásához
+    }</script>
+
+    <footer>
+        <div class="flex-footer">
+            <div>
+                <p id="utoirat">&copy; 2023 Magyar Roland</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

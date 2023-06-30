@@ -1,0 +1,35 @@
+<script src="../controllers/reservation.mjs"></script>
+<main>
+
+  <body class= 'menu'>
+  <% if (list.length == 0) { %>
+    <p>Nincsenek adatok feltöltve</p>
+  <% } else { %>
+    <div class="service-listing">
+      <% for (let i = 0; i < list.length; i += 3) { %>
+        <div class="row">
+          <% for (let j = i; j < i + 3 && j < list.length; j++) { %>
+            <div class="col">
+              <div class="service">
+                <img src="data:image/jpeg;base64,<%= list[j].picture %>" alt="<%= list[j].title %>">
+                <h3 class="service-title"><%= list[j].title %></h3>
+                <p class="service-description"><%= list[j].description %></p>
+                <h3 class="price"><%= list[j].price %> RON</h3>
+                <form action="/reservation" method="POST">
+                  <div class="reservation-box">
+                    <input id="email" class="input" type="text"  name="email" placeholder="E-mail cim" required>
+                    <input type="hidden" name="service" value=<%= list[j].title %>>
+                    <input type="datetime-local" class="service-input" name="date" id="service<%= j + 1 %>-input">
+                    <button class="reservation-button" type="submit">Foglalás</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          <% } %>
+        </div>
+      <% } %>
+    </div>
+  <% } %>
+</body>
+</main>

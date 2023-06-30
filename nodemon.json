@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "sessions/*", 
+    "temp/*", 
+    "uploads/*",
+    ".gitignore"
+  ]
+}

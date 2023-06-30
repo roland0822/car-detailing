@@ -1,0 +1,306 @@
+body {
+    background: url("../images/car.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: antiquewhite;
+    
+  }
+
+  .menu{
+    background-image: url("../images/bubbles.jpg");
+    background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat:fill;
+  background-size: cover;
+  position: relative;
+  }
+
+  .flex-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.flex-main{
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.flex-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-aside{
+  display: flex;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: beige;
+  margin-left: 20px;
+  
+}
+
+#main-box{
+  display: flex;
+  width: max-content; 
+  border-style: solid;
+  border-color: beige; 
+  background-image: linear-gradient(45deg, #9578f3, #42af58);
+  border: 3px solid #df7320;
+  padding: 10px;
+}
+
+a{
+    text-decoration: blink;
+    color:beige
+}
+
+a:hover{
+    color:rgb(255, 149, 0);
+    text-decoration: blink;
+}
+
+  .page-background{
+    background-image: url("car3.jpg");
+    background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat:fill;
+  background-size: cover;
+  position: relative;
+  }
+
+  .flex-container {
+    background-image: linear-gradient(45deg, #9578f3, #42af58);
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #75481a;
+    padding: 10px;
+}
+
+  /* login  */
+
+  #login-flex{
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+  
+}
+
+  #login_text {
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+   }
+
+
+.input{
+    margin-bottom: 10px;
+}
+
+/* header and footer */  
+ /* header {
+    background-color: #933d3d;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  } */
+
+  /* header h1 {
+    margin: 0;
+  } */
+
+  /* nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  } */
+
+ /* register */
+
+ #register_text {
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+   }
+
+   /* home */ 
+   #home-container {
+    background-image: linear-gradient(45deg, #9578f3, #42af58);
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #75481a;
+    padding: 10px;
+}
+
+.service-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-image: linear-gradient(45deg, #9578f3, #42af58);
+  text-align: center;
+}
+
+.service img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  margin-bottom: 10px;
+}
+
+.service-reservation {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.service-input {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reservation-box {
+  background-color: #38af79;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.reservation-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ba56de;
+  margin-top: 10px;
+}
+
+.reservation-button {
+  background-color: #38af79;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav .active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#focim {
+  font-size: 24px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.description {
+  margin: 1px;
+  padding: 1px;
+  width: 250px;
+  height: 150px;
+  resize: none;
+}

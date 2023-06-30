@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<link id="styleSheet" rel="stylesheet" type="text/css"
+            href="login_page_style.css" media="screen">
+<script src="main_page.js"></script>
+<html lang = "hu">
+    <head>
+        <title>Detailing</title>
+        <meta charset = "utf-8">
+    </head>
+<body>
+    <header>
+        <div class="flex-header">
+            <div>  <h1 id="focim">Detailing</h1></div>
+            
+        </div>
+    
+    </header>
+
+<main>
+    <div class="flex-main">
+        <div  id="main-box">
+            <div id="login-flex">
+                <p id ="login_text">Welcome to Login</p>
+                <div id="form">
+                  <form id="form" method="POST" action="/user/login" >
+                
+                      <label for="e-mail" class="item">
+                        <b>E-mail: </b>
+                      </label>
+                      <input 
+                      id="email"
+                      class="input"
+                      type="email" 
+                      name="email" 
+                      placeholder="Enter e-mail"
+                      pattern="([a-z0-9_]|\-|\.)+@(([a-z0-9_]|\-)+\.)+[a-z]{2,10}"
+                      required>
+                      <br><br>
+                      <label for="password" class="item" >
+                        <b>Password: </b>
+                      </label>
+                      <input 
+                      id = "password"
+                      type="password" 
+                      placeholder="Enter password" 
+                      class="input"
+                      type="password"
+                      name="password" 
+                      value=""
+                      pattern=".{4,100}"
+                      required>
+                      <br><br>
+                      <button id="login_button"  type="submit" class="login_button">Login</button>
+                       <br><br>
+                      <span >If you don't have account</span>
+                      <a href="/user/register"> click here.</a>
+                    
+                  </form>
+                </div>
+              </div>
+          </div>
+      </div>
+
+
+</main>
+
+    <footer>
+        <div class="flex-footer">
+            <div>
+                <p id="utoirat">&copy; 2023 Magyar Roland</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

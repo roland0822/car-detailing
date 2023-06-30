@@ -1,0 +1,45 @@
+<body>
+<main>
+  <div class="flex-main">
+    <div  id="main-box">
+        <div id="login-flex">
+            <p id ="login_text">Welcome to Login</p>
+            <div id="form">
+              <form id="form" method="POST" action="/user/login" >
+            
+                  <label for="e-mail" class="item">
+                  </label>
+                  <input 
+                  id="email"
+                  class="input"
+                  type="email" 
+                  name="email" 
+                  placeholder="E-mail"
+                  pattern="([a-z0-9_]|\-|\.)+@(([a-z0-9_]|\-)+\.)+[a-z]{2,10}"
+                  required>
+                  <br><br>
+                  <label for="password" class="item" >
+                  </label>
+                  <input 
+                  id = "password"
+                  type="password" 
+                  placeholder="Password" 
+                  class="input"
+                  type="password"
+                  name="password" 
+                  value=""
+                  pattern=".{4,100}"
+                  required>
+                  <br><br>
+                  <button id="login_button"  type="submit" class="login_button">Login</button>
+                  <br><br>
+                  <span >If you don't have account</span>
+                  <a href="/user/register"> click here.</a>
+                
+              </form>
+            </div>
+        
+      </div>
+  </div>
+</main>
+</body>

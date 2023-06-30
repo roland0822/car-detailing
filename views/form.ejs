@@ -1,0 +1,60 @@
+<main>
+  <div class="flex-main">
+      <div  id="main-box">
+          <div id="login-flex">
+            <p id ="login_text">Uj szolgáltatás létrehozása</p><br>
+<div id="form">
+
+  <form action="/form" method="POST" >
+    
+          <label for="workers">Dolgozó:</label>
+          <select id="workers" name="workers">
+            <% workers.forEach(function(workers) { %>
+              <option value="<%= workers.user_id %>"><%= workers.name %></option>
+            <% }); %>
+          </select><br><br>
+
+          <label for="category">Kategória:</label>
+          <select id="category" name="category">
+            <% categories.forEach(function(category) { %>
+              <option value="<%= category.category_id %>"><%= category.category %></option>
+            <% }); %>
+          </select><br><br>
+
+          <input 
+          type="text" 
+          name="price" 
+          placeholder="price" 
+          required
+          maxlength="20"
+          ><label for="price"> RON</label><br><br>
+
+          <span>Leirás ide:</span><br>
+      <textarea class="description"
+          type="text" 
+          name="description" 
+          required
+          maxlength="100"
+          ></textarea><br><br>
+
+      <label for="kep"> Kép (max 1MB): </label>
+      <input 
+          id="kep" 
+          type="file" 
+          name="kep" 
+          class="input item" /><br><br>
+     <br><br>
+     <button class="reservation-button" type="submit">Letrehozas</button>
+      
+  </form>
+</div>
+              
+          </div>
+          
+  
+      </div>
+  
+  </div>
+
+
+</main>
